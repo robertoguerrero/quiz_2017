@@ -12,8 +12,8 @@ router.get('/author', function(req, res, next) {
 });
 
 // Pagina de ayuda
-router.get('/ayuda', function(req, res, next) {
-    res.render('ayuda');
+router.get('/help', function(req, res, next) {
+    res.render('help');
 });
 
 module.exports = router;
