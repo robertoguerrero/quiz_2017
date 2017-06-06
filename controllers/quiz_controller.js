@@ -187,3 +187,30 @@ exports.check = function (req, res, next) {
         answer: answer
     });
 };
+
+function content(id, question, asnwer){
+	return { "id": id, "question": question, "answer": answer };
+}
+
+function random(param){
+	var num = Math.floor(Math.random() * param);
+	return num;
+}
+
+// Random Play
+
+exports.randomplay = function(req, res, next){
+	var quiz;
+	var practica;
+
+	if(req.session.practica == null){
+		practica = {'score':0, 'result': true, 'quizzes': [], 'index': 0};
+	}else{
+		practica = req.session.practica;
+	}
+
+}
+
+
+
+
